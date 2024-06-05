@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f9fc; 
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background-color: #ddeeff; 
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .tab.active {
+            background-color: #a7d3f0; 
+            color: #fff;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            background-color: #f0f7f4; 
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .section ul li {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .section ul li strong {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .pagination button {
+            padding: 10px 20px;
+            background-color: #ddeeff; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .pagination button.active {
+            background-color: #a7d3f0; 
+            color: #fff;
+        }
+
+        .skill-bar {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .skill-bar-fill {
+            background-color: #4CAF50;
+            height: 20px;
+        }
+        
+        .progress-label {
+            padding: 5px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddeeff; 
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .project h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            font-size: 16px;
+            color: #666;
+        }
+        .project li {
+            font-size: 16px;
+            color: #191a18;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .name {
+                font-size: 28px;
+            }
+            .title {
+                font-size: 18px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .section ul li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">Mya Thein Han</div>
+            <div class="title">Software Developer</div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showSection('contact')">Contact</div>
+            <div class="tab" onclick="showSection('education')">Education</div>
+            <div class="tab" onclick="showSection('experience')">Experience</div>
+            <div class="tab" onclick="showSection('skills')">Skills</div>
+            <div class="tab" onclick="showSection('projects')">Projects</div>
+        </div>
+        
+        <div id="contact" class="section">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> myatheinhan10@gmail.com</li>
+                <li><strong>Phone:</strong> 09772365740</li>
+                <li><strong>Address:</strong> North Dagon (Yangon)</li>
+            </ul>
+        </div>
+        
+        <div id="education" class="section" style="display: none;">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Degree:</strong> Diploma in Computer Science (HND)</li>
+                <li><strong>Degree:</strong> Computing Software Development Advanced Diploma (SQA)</li>
+                <li><strong>University:</strong> KMD Institude (SQA)</li>
+                <li><strong>Year:</strong> 2018-2020</li>
+            </ul>
+        </div>
+        
+        <div id="experience" class="section" style="display: none;">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Job Title:</strong> Software Developer </li>
+                <li><strong>Company:</strong> Myanmar Information Technology (MIT)</li>
+                <li><strong>Duration:</strong> 2022-2024</li>
+                <!-- Add more items as needed -->
+            </ul>
+            <h2>Areas of Expertise</h2>
+            
+                <li>System Analysis </li> 
+                <li>User Research</li>
+                <li>Object-Oriented Design</li>
+                <li>Database Modelling</li>
+                <li>Software Testing and Debugging</li>
+                <li>Agile Methodology</li>
+                <li>Machine Learning</li>
+        
+        </div>
+        
+        <div id="skills" class="section" style="display: none;">
+            <h2>Technical Skills</h2>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 84%;">
+                    <div class="progress-label">Angular</div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 88%;">
+                    <div class="progress-label">Java</div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 88%;">
+                    <div class="progress-label">Spring Boot</div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 80%;">
+                    <div class="progress-label">HTML/CSS</div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 80%;">
+                    <div class="progress-label">JavaScript</div>
+                </div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 85%;">
+                    <div class="progress-label">Microsoft SQL</div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 85%;">
+                    <div class="progress-label"> Oracle</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="section" style="display: none;">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Central Bank of Myanmar (CBMMIS)</h3>
+                <p> This is one of the big project using Angular+Java which have many graphic interface, Bank flows controlling with server and handling with backend coding. 
+                    And then, many report using with IReport. 
+                    <li>Banking Systems and servicing banks’ requirement systems.</li>
+                    <li> Analyze user needs and design software solutions </li>
+                    <li> Code high-performance programs using different frameworks </li>
+                    <li> Conducted thorough testing and debugging to ensure software functionality and performance</li>
+                    <li> Work with other teams for debugging </li>
+                    <li> Built back-end services that crunched data to deliver business insights </li>
+                    <li> Created automated release process tools </li>
+                    <li> Implemented Git for version control to facilitate collaborative development.</li>
+                </p>
+            </div>
+            <div class="project">
+                <h3>Agent MIS</h3>
+                <p>This is one of the big project using Angular+Java which have many process, graphic interface, Bank flows controlling with server and handling with backend coding. 
+                    And then, many report using with JasperReport.
+                    <li>Banking Systems and servicing banks’ requirement systems.</li>
+                    <li> Analyze user needs and design software solutions </li>
+                    <li> Code high-performance programs using different frameworks </li>
+                    <li> Work with other teams for debugging </li>
+                    <li> Built back-end services that crunched data to deliver business insights </li>
+                    <li> Created automated release process tools </li></p>
+            </div>
+            <div class="project">
+                <h3>Farmer Development Bank (FDB)</h3>
+                <p>This project is report server using Oracle that write the queries and procedure.</p>
+            </div>
+
+            <div class="project">
+                <h3>Shinhan Bank</h3>
+                <p>This is one of the big project using Java which have many process and controlling and handling timing with backend coding.
+                    <li>Development and service</li>
+                    <li> Analyze user needs and design software solutions </li>
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>RDB Bank</h3>
+                <p>This is one of the big project using Java which have many process and controlling and handling timing with backend coding
+                    <li>Development and service</li>
+                    <li> Analyze user needs and design software solutions </li>
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Apollo</h3>
+                <p>This is one of the big project that using with Spring Boot. This project is used for tower's read and write process.
+                    Some common use cases of APIs includes.
+                    <li>APIs Protocol common requests and responses.</li>
+                    <li> Conducted thorough testing and debugging to ensure software functionality and performance.</li>
+                    <li> Developed the application using Java and Spring Boot for the backend, ensuring scalability and maintainability.</li>
+
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Fingerprint and Face Device</h3>
+                <p>This is the device using with code that C#,Java and Window application creation.Some common use cases of APIs includes.
+                    Those have many process and controlling and handling timing with backend coding.
+                    <li> Conducted thorough testing and debugging to ensure software functionality and performance.</li>
+                    <li>Built back-end services that crunched data to deliver business insights</li>
+                </p>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="active" onclick="changePage(1)">1</button>
+            <button onclick="changePage(2)">2</button>
+            <!-- Add more buttons for additional pages if needed -->
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(sectionId).style.display = 'block';
+            document.querySelector('.tab[data-section="' + sectionId + '"]').classList.add('active');
+        }
+
+        function changePage(page) {
+            var buttons = document.querySelectorAll('.pagination button');
+            buttons.forEach(function(button) {
+                button.classList.remove('active');
+            });
+            document.querySelector('.pagination button:nth-child(' + page + ')').classList.add('active');
+            // You can implement functionality to change content based on page number here if needed
+        }
+
+        
+        showSection('contact');
+    </script>
+</body>
+</html>
